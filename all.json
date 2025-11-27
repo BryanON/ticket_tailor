@@ -1,0 +1,738 @@
+{
+    "Malahide Castle": {
+        "Car Parking - Neil Young": {
+            "time_slots": [
+                {
+                    "start_time": "15:01",
+                    "end_time": "15:30",
+                    "total_tickets": 1,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 3,
+                    "total_issued_tickets": 3,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 300,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 182,
+                    "remaining_tickets": 118
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 158,
+                    "remaining_tickets": 142
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 164,
+                    "remaining_tickets": 136
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 188,
+                    "total_issued_tickets": 188,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 100,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "19:00",
+                    "total_tickets": 8,
+                    "total_issued_tickets": 8,
+                    "remaining_tickets": 0
+                }
+            ],
+            "summary": {
+                "date": "2025-06-26",
+                "total_tickets": 1500,
+                "total_issued_tickets": 1104,
+                "remaining_tickets": 396
+            }
+        },
+        "Car Parking - Justin Timberlake": {
+            "time_slots": [
+                {
+                    "start_time": "14:00",
+                    "end_time": "19:00",
+                    "total_tickets": 8,
+                    "total_issued_tickets": 8,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "14:01",
+                    "end_time": "14:30",
+                    "total_tickets": 1,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "15:00",
+                    "total_tickets": 0,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 249,
+                    "remaining_tickets": 51
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 87,
+                    "remaining_tickets": 213
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 200,
+                    "total_issued_tickets": 71,
+                    "remaining_tickets": 129
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 85,
+                    "remaining_tickets": 65
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 72,
+                    "remaining_tickets": 78
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 64,
+                    "remaining_tickets": 86
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 91,
+                    "total_issued_tickets": 70,
+                    "remaining_tickets": 21
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "15:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 76,
+                    "remaining_tickets": 74
+                }
+            ],
+            "summary": {
+                "date": "2025-06-28",
+                "total_tickets": 1500,
+                "total_issued_tickets": 783,
+                "remaining_tickets": 717
+            }
+        },
+        "Car Parking - Alanis Morissette": {
+            "time_slots": [
+                {
+                    "start_time": "15:00",
+                    "end_time": "19:00",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 50,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:01",
+                    "end_time": "15:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 150,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 150,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 185,
+                    "remaining_tickets": 115
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 101,
+                    "remaining_tickets": 199
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 106,
+                    "remaining_tickets": 44
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 86,
+                    "remaining_tickets": 64
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 105,
+                    "remaining_tickets": 45
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 88,
+                    "remaining_tickets": 12
+                }
+            ],
+            "summary": {
+                "date": "2025-06-29",
+                "total_tickets": 1500,
+                "total_issued_tickets": 1021,
+                "remaining_tickets": 479
+            }
+        },
+        "Car Parking - Duran Duran": {
+            "time_slots": [
+                {
+                    "start_time": "15:00",
+                    "end_time": "19:00",
+                    "total_tickets": 6,
+                    "total_issued_tickets": 6,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:01",
+                    "end_time": "15:30",
+                    "total_tickets": 1,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 0,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 92,
+                    "remaining_tickets": 208
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 34,
+                    "remaining_tickets": 266
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 38,
+                    "remaining_tickets": 262
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 45,
+                    "remaining_tickets": 255
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 193,
+                    "total_issued_tickets": 35,
+                    "remaining_tickets": 158
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 39,
+                    "remaining_tickets": 61
+                }
+            ],
+            "summary": {
+                "date": "2025-06-30",
+                "total_tickets": 1500,
+                "total_issued_tickets": 290,
+                "remaining_tickets": 1210
+            }
+        },
+        "Car Parking - Mumford & Sons": {
+            "time_slots": [
+                {
+                    "start_time": "14:01",
+                    "end_time": "14:30",
+                    "total_tickets": 0,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "15:00",
+                    "total_tickets": 0,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "15:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 150,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 79,
+                    "remaining_tickets": 221
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 300,
+                    "total_issued_tickets": 80,
+                    "remaining_tickets": 220
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 200,
+                    "total_issued_tickets": 45,
+                    "remaining_tickets": 155
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 90,
+                    "remaining_tickets": 60
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 63,
+                    "remaining_tickets": 87
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 53,
+                    "remaining_tickets": 97
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 41,
+                    "remaining_tickets": 59
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "19:00",
+                    "total_tickets": 0,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 0
+                }
+            ],
+            "summary": {
+                "date": "2025-07-04",
+                "total_tickets": 1500,
+                "total_issued_tickets": 601,
+                "remaining_tickets": 899
+            }
+        }
+    },
+    "Marlay Park": {
+        "Car Parking - Chris Brown": {
+            "time_slots": [
+                {
+                    "start_time": "15:01",
+                    "end_time": "15:30",
+                    "total_tickets": 66,
+                    "total_issued_tickets": 66,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 75,
+                    "total_issued_tickets": 61,
+                    "remaining_tickets": 14
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 28,
+                    "remaining_tickets": 72
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 35,
+                    "remaining_tickets": 65
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 43,
+                    "remaining_tickets": 57
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 36,
+                    "remaining_tickets": 64
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 33,
+                    "remaining_tickets": 17
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "19:00",
+                    "total_tickets": 9,
+                    "total_issued_tickets": 9,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 25,
+                    "remaining_tickets": 25
+                }
+            ],
+            "summary": {
+                "date": "2025-06-28",
+                "total_tickets": 650,
+                "total_issued_tickets": 336,
+                "remaining_tickets": 314
+            }
+        },
+        "Car Parking - Noah Kahan": {
+            "time_slots": [
+                {
+                    "start_time": "15:00",
+                    "end_time": "15:30",
+                    "total_tickets": 13,
+                    "total_issued_tickets": 13,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 6,
+                    "remaining_tickets": 44
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 100,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 150,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 150,
+                    "total_issued_tickets": 150,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 132,
+                    "total_issued_tickets": 132,
+                    "remaining_tickets": 0
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 80,
+                    "total_issued_tickets": 53,
+                    "remaining_tickets": 27
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 75,
+                    "total_issued_tickets": 50,
+                    "remaining_tickets": 25
+                }
+            ],
+            "summary": {
+                "date": "2025-07-01",
+                "total_tickets": 750,
+                "total_issued_tickets": 654,
+                "remaining_tickets": 96
+            }
+        }
+    },
+    "Thomond Park": {
+        "Car Parking - The Wolfe Tones (Friday 11th July)": {
+            "time_slots": [
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 10,
+                    "remaining_tickets": 40
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 98
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 99
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 98
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 100
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 98
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 99
+                },
+                {
+                    "start_time": "19:00",
+                    "end_time": "19:30",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 49
+                }
+            ],
+            "summary": {
+                "date": "2025-07-11",
+                "total_tickets": 700,
+                "total_issued_tickets": 19,
+                "remaining_tickets": 681
+            }
+        },
+        "Car Parking - The Script": {
+            "time_slots": [
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 6,
+                    "remaining_tickets": 44
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 11,
+                    "remaining_tickets": 89
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 3,
+                    "remaining_tickets": 97
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 98
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 99
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 98
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 98
+                },
+                {
+                    "start_time": "19:00",
+                    "end_time": "19:30",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 50
+                }
+            ],
+            "summary": {
+                "date": "2025-07-12",
+                "total_tickets": 700,
+                "total_issued_tickets": 27,
+                "remaining_tickets": 673
+            }
+        },
+        "Car Parking - The Wolfe Tones (Sunday 13th July)": {
+            "time_slots": [
+                {
+                    "start_time": "15:30",
+                    "end_time": "16:00",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 2,
+                    "remaining_tickets": 48
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "16:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 3,
+                    "remaining_tickets": 97
+                },
+                {
+                    "start_time": "16:30",
+                    "end_time": "17:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 3,
+                    "remaining_tickets": 97
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "17:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 5,
+                    "remaining_tickets": 95
+                },
+                {
+                    "start_time": "17:30",
+                    "end_time": "18:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 3,
+                    "remaining_tickets": 97
+                },
+                {
+                    "start_time": "18:00",
+                    "end_time": "18:30",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 100
+                },
+                {
+                    "start_time": "18:30",
+                    "end_time": "19:00",
+                    "total_tickets": 100,
+                    "total_issued_tickets": 1,
+                    "remaining_tickets": 99
+                },
+                {
+                    "start_time": "19:00",
+                    "end_time": "19:30",
+                    "total_tickets": 50,
+                    "total_issued_tickets": 0,
+                    "remaining_tickets": 50
+                }
+            ],
+            "summary": {
+                "date": "2025-07-13",
+                "total_tickets": 700,
+                "total_issued_tickets": 17,
+                "remaining_tickets": 683
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+/* Custom CSS on top of water.css for Evntz pdf reports */
+
+@page {
+  size: A4;
+  margin: 8mm;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif;
+  font-size: 9pt;
+
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+
+  @bottom-left {
+    content: "Evntz Ticket Report";
+  }
+
+  @bottom-center {
+    content: "Private & Confidential";
+  }
+}
+
+@page :first {
+  margin-top: 4mm;
+}
+
+body {
+  font-size: 10pt;
+}
+
+.la_text {
+  text-align: left;
+}
+
+td {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+th {
+  text-align: center;
+  background-color: #ede6ff;
+}

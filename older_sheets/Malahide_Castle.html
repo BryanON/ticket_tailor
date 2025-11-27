@@ -1,0 +1,561 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Car Park Sales Report</title>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css"> -->
+        <link rel="stylesheet" href="styles/water_css_dark_min.css">
+        <style>
+            .la_text { text-align: left; }
+            td { text-align: right; }
+            th { text-align: center; }
+        </style>
+    </head>
+
+    <header style="display:flex;">
+        <h2 style="flex-basis: 80%">Car Park Ticket Sales Report</h2>
+        <!-- <div style="flex-basis: 20%; max-width: 100%;"> -->
+        <div style="flex-basis: 20%">
+            <img style="height: 44px; width: 160px;" src="https://global-uploads.webflow.com/64045cae3308e7baa231f661/6418951836481a75ca78e5af_Evntz%20Logo.svg">
+            
+        </div>
+    </header>
+    
+    <body>
+        <!-- location header start -->
+        <hr>
+        <div style="display:flex;">
+            <h3 style="flex-basis: 65%; margin-top: 8px;">Malahide Castle</h3>
+            <div style="border-left: 1px solid var(--border); padding-left: 10px;">
+                <!-- <p> -->
+                Date: ##DATE-MM-DD<br/>
+                Time: ##TIME
+                <!-- </p> -->
+            </div>
+        </div>
+        <!-- location header end -->
+        <hr>
+        <!-- summary table start -->
+        <h4>All Events Summary</h4>
+        <table>
+            <thead>
+                <th style="width:30%">Event</th>
+                <th>Total Tickets</th>
+                <th>Tickets Issued</th>
+                <th>Tickets Remaining</th>
+            </thead>
+            <tr></tr>
+    
+        <tr>
+            <td class="la_text">Iron Maiden</td>
+            <td>1500</td>
+            <td>1460</td>
+            <td>40</td>
+        </tr>
+     
+        <tr>
+            <td class="la_text">Neil Young</td>
+            <td>1500</td>
+            <td>612</td>
+            <td>888</td>
+        </tr>
+     
+        <tr>
+            <td class="la_text">Justin Timberlake</td>
+            <td>1500</td>
+            <td>585</td>
+            <td>915</td>
+        </tr>
+     
+        <tr>
+            <td class="la_text">Alanis Morissette</td>
+            <td>1500</td>
+            <td>725</td>
+            <td>775</td>
+        </tr>
+     
+        <tr>
+            <td class="la_text">Duran Duran</td>
+            <td>1500</td>
+            <td>212</td>
+            <td>1288</td>
+        </tr>
+     
+        <tr>
+            <td class="la_text">Mumford & Sons</td>
+            <td>1500</td>
+            <td>482</td>
+            <td>1018</td>
+        </tr>
+    
+        </table>
+        <!-- summary table end -->
+
+        <img src="images/Malahide_Castle.svg" width="90%" style="display: block; margin-left: auto; margin-right: auto; width: 95%;">
+        <hr style="break-after: page;"><br/>
+        <!-- details table start -->
+        <!-- <h4>Event Details</h4> -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Start Time</th>
+                    <th>Tickets Issued</th>
+                    <th>Ticket Remaining</th>
+                </tr>
+            </thead>
+        </table>
+    
+    <table>
+        <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="11" class="la_text"><strong>Iron Maiden</strong></td>
+                <td colspan="3">
+            </tr>
+            
+            <tr>
+                <td>15:00</td>
+                <td>49</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:01</td>
+                <td>60</td>
+                <td>40</td>
+            </tr>
+        
+            <tr>
+                <td>15:30</td>
+                <td>100</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>16:00</td>
+                <td>300</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>16:30</td>
+                <td>300</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>17:00</td>
+                <td>250</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>17:30</td>
+                <td>150</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>18:00</td>
+                <td>150</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>18:30</td>
+                <td>101</td>
+                <td>0</td>
+            </tr>
+        
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td><strong>Iron Maiden Totals</strong></td>
+                <td>1460</td>
+                <td>40</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <table>
+        <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="11" class="la_text"><strong>Neil Young</strong></td>
+                <td colspan="3">
+            </tr>
+            
+            <tr>
+                <td>15:01</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:30</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>16:00</td>
+                <td>262</td>
+                <td>38</td>
+            </tr>
+        
+            <tr>
+                <td>16:30</td>
+                <td>73</td>
+                <td>227</td>
+            </tr>
+        
+            <tr>
+                <td>17:00</td>
+                <td>77</td>
+                <td>223</td>
+            </tr>
+        
+            <tr>
+                <td>17:30</td>
+                <td>67</td>
+                <td>233</td>
+            </tr>
+        
+            <tr>
+                <td>18:00</td>
+                <td>69</td>
+                <td>119</td>
+            </tr>
+        
+            <tr>
+                <td>18:30</td>
+                <td>52</td>
+                <td>48</td>
+            </tr>
+        
+            <tr>
+                <td>15:00</td>
+                <td>8</td>
+                <td>0</td>
+            </tr>
+        
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td><strong>Neil Young Totals</strong></td>
+                <td>612</td>
+                <td>888</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <table>
+        <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="13" class="la_text"><strong>Justin Timberlake</strong></td>
+                <td colspan="3">
+            </tr>
+            
+            <tr>
+                <td>14:00</td>
+                <td>8</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>14:01</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>14:30</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:30</td>
+                <td>199</td>
+                <td>101</td>
+            </tr>
+        
+            <tr>
+                <td>16:00</td>
+                <td>66</td>
+                <td>234</td>
+            </tr>
+        
+            <tr>
+                <td>16:30</td>
+                <td>49</td>
+                <td>151</td>
+            </tr>
+        
+            <tr>
+                <td>17:00</td>
+                <td>63</td>
+                <td>87</td>
+            </tr>
+        
+            <tr>
+                <td>17:30</td>
+                <td>48</td>
+                <td>102</td>
+            </tr>
+        
+            <tr>
+                <td>18:00</td>
+                <td>48</td>
+                <td>102</td>
+            </tr>
+        
+            <tr>
+                <td>18:30</td>
+                <td>42</td>
+                <td>49</td>
+            </tr>
+        
+            <tr>
+                <td>15:00</td>
+                <td>61</td>
+                <td>89</td>
+            </tr>
+        
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td><strong>Justin Timberlake Totals</strong></td>
+                <td>585</td>
+                <td>915</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <table>
+        <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="11" class="la_text"><strong>Alanis Morissette</strong></td>
+                <td colspan="3">
+            </tr>
+            
+            <tr>
+                <td>15:00</td>
+                <td>50</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:01</td>
+                <td>150</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:30</td>
+                <td>121</td>
+                <td>29</td>
+            </tr>
+        
+            <tr>
+                <td>16:00</td>
+                <td>98</td>
+                <td>202</td>
+            </tr>
+        
+            <tr>
+                <td>16:30</td>
+                <td>66</td>
+                <td>234</td>
+            </tr>
+        
+            <tr>
+                <td>17:00</td>
+                <td>72</td>
+                <td>78</td>
+            </tr>
+        
+            <tr>
+                <td>17:30</td>
+                <td>57</td>
+                <td>93</td>
+            </tr>
+        
+            <tr>
+                <td>18:00</td>
+                <td>63</td>
+                <td>87</td>
+            </tr>
+        
+            <tr>
+                <td>18:30</td>
+                <td>48</td>
+                <td>52</td>
+            </tr>
+        
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td><strong>Alanis Morissette Totals</strong></td>
+                <td>725</td>
+                <td>775</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <table>
+        <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="11" class="la_text"><strong>Duran Duran</strong></td>
+                <td colspan="3">
+            </tr>
+            
+            <tr>
+                <td>15:00</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:01</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:30</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>16:00</td>
+                <td>76</td>
+                <td>224</td>
+            </tr>
+        
+            <tr>
+                <td>16:30</td>
+                <td>28</td>
+                <td>272</td>
+            </tr>
+        
+            <tr>
+                <td>17:00</td>
+                <td>22</td>
+                <td>278</td>
+            </tr>
+        
+            <tr>
+                <td>17:30</td>
+                <td>32</td>
+                <td>268</td>
+            </tr>
+        
+            <tr>
+                <td>18:00</td>
+                <td>20</td>
+                <td>173</td>
+            </tr>
+        
+            <tr>
+                <td>18:30</td>
+                <td>27</td>
+                <td>73</td>
+            </tr>
+        
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td><strong>Duran Duran Totals</strong></td>
+                <td>212</td>
+                <td>1288</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <table>
+        <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="13" class="la_text"><strong>Mumford & Sons</strong></td>
+                <td colspan="3">
+            </tr>
+            
+            <tr>
+                <td>14:01</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>14:30</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        
+            <tr>
+                <td>15:00</td>
+                <td>143</td>
+                <td>7</td>
+            </tr>
+        
+            <tr>
+                <td>15:30</td>
+                <td>56</td>
+                <td>244</td>
+            </tr>
+        
+            <tr>
+                <td>16:00</td>
+                <td>63</td>
+                <td>237</td>
+            </tr>
+        
+            <tr>
+                <td>16:30</td>
+                <td>31</td>
+                <td>169</td>
+            </tr>
+        
+            <tr>
+                <td>17:00</td>
+                <td>70</td>
+                <td>80</td>
+            </tr>
+        
+            <tr>
+                <td>17:30</td>
+                <td>53</td>
+                <td>97</td>
+            </tr>
+        
+            <tr>
+                <td>18:00</td>
+                <td>36</td>
+                <td>114</td>
+            </tr>
+        
+            <tr>
+                <td>18:30</td>
+                <td>30</td>
+                <td>70</td>
+            </tr>
+        
+            <tr>
+                <td>14:00</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td><strong>Mumford & Sons Totals</strong></td>
+                <td>482</td>
+                <td>1018</td>
+            </tr>
+        </tbody>
+    </table>
+    
+                </tbody>
+            </table>
+            <!-- details table end -->
+        </body>
+    <footer>
+        <p>Evntz.ie © 2025 EvntzSavvy Ltd. All rights reserved</p>
+    </footer>
+    </html>
+    

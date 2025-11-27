@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Park Sales Report</title>
+    <!-- <link rel="stylesheet" href="styles/report.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css" /> -->
+    <style>
+        .texttest {
+            text-align: left;
+        }
+        td {
+            text-align: right;
+        }
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<header style="display:flex;">
+    <h2 style="flex-basis: 80%">Car Park Ticket Sales Report</h2>
+    <img src="https://global-uploads.webflow.com/64045cae3308e7baa231f661/6418951836481a75ca78e5af_Evntz%20Logo.svg" width="20%">
+</header>
+
+<body>
+    <!-- <span><img src="images/evntz_logo.png" width="100" height="25"></span>
+    <img src="https://global-uploads.webflow.com/64045cae3308e7baa231f661/6418951836481a75ca78e5af_Evntz%20Logo.svg"
+                                        title="evntz logo" alt="evntz dot IE logo" style="display:block">
+     -->
+    <!-- location header start -->
+    <hr>
+    <div style="display:flex;">
+        <h3 style="flex-basis: 65%">##LOCATION</h3>
+        <div style="border-left: 1px solid var(--border); padding-left: 10px;">
+            <p>Date: ##DATE-MM-DD</p>
+            <p>Time: ##TIME</p>
+        </div>
+    </div>
+    <!-- location header end -->
+    <hr>
+
+    <!-- summary table start -->
+    <h4>All Events Summary</h4>
+    <table>
+        <thead>
+            <th>Event</th>
+            <th>Total Tickets</th>
+            <th>Tickets Issued</th>
+            <th>Tickets Remaining</th>
+        </thead>
+        <tr>
+            <td class="texttest">Taylor Swift</td>
+            <td>5000</td>
+            <td>4200</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td class="texttest">Drake</td>
+            <td>4000</td>
+            <td>3500</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td class="texttest">Beyoncé</td>
+            <td>6000</td>
+            <td>5900</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td class="texttest">Ed Sheeran</td>
+            <td>4500</td>
+            <td>4100</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td class="texttest">Billie Eilish</td>
+            <td>3000</td>
+            <td>2700</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td class="texttest">The Weeknd</td>
+            <td>5200</td>
+            <td>5000</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td class="texttest">Adele</td>
+            <td>3500</td>
+            <td>3400</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td class="texttest">Bruno Mars</td>
+            <td>3800</td>
+            <td>3200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td class="texttest">Lady Gaga</td>
+            <td>4100</td>
+            <td>3900</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td class="texttest">Coldplay</td>
+            <td>4800</td>
+            <td>4700</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <!-- summary table end -->
+
+    <!-- summary graph start -->
+    <div style="display:flex; justify-content: center; margin: 20px; margin-top: 40px; margin-bottom: 40px;">
+        <img src="https://global-uploads.webflow.com/64045cae3308e7baa231f661/6418951836481a75ca78e5af_Evntz%20Logo.svg" width="60%">
+    </div>
+    <!-- summary graph end -->
+
+    <!-- details table start -->
+    <table>
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Start Time</th>
+                <th>Tickets Issued</th>
+                <th>Ticket Remaining</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- single event table start -->
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="4" class="texttest">Taylor Swift</td>
+                <td>17:00</td>
+                <td>4200</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>17:30</td>
+                <td>4200</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>4200</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td >Taylor Swift Totals</td>
+                <td>321</td>
+                <td>800</td>
+            </tr>
+            <!-- single event table end -->
+            <tr style="border-top: 1px solid var(--border);">
+                <td rowspan="4"  class="texttest">Drake</td>
+                <td>17:00</td>
+                <td>4200</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>17:30</td>
+                <td>4200</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>4200</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Drake Totals</td>
+                <td>x</td>
+                <td>800</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- details table start -->
+</body>
+<footer>
+    <p>Evntz.ie © 2025 EvntzSavvy Ltd. All rights reserved</p>
+</footer>
+</html>

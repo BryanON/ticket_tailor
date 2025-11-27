@@ -1,0 +1,16 @@
+
+table {
+  border: 2px solid #a41a1a;
+  width: 80%;
+  margin-bottom: 30px;
+  background: #c2bfbf;
+}
+
+.location_header {
+  background: #000000;
+  color: #e0d9d9;
+  font-weight: bold;
+  text-align: right;
+}
+p.location_header {
+}
