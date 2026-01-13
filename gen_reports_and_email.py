@@ -188,7 +188,8 @@ def gen_report_html(venue, events):
 def send_email(venue, filename):
     sender_email = "bryanoneill10@gmail.com"
     sender_password = "mtoe eadz suol rwrj"
-    receiver_email = "killian.martin@gmail.com"
+    receiver_email = "bryanoneill10@gmail.com"
+    # receiver_email = "killian.martin@gmail.com"
     cc = "bryanoneill10@gmail.com"
 
     # Email content
