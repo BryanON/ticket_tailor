@@ -1,0 +1,5 @@
+reports/*.pdf
+reports/*.html
+reports/images/
+venv/
+__pycache__/
