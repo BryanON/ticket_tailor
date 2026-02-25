@@ -4,6 +4,7 @@ from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from pathlib import Path
 from config import EMAIL_CONFIG
 
 
@@ -41,7 +42,7 @@ def send_report_email(venue_name, pdf_filename, recipients=None, cc_recipients=N
         raise ValueError(f"No valid recipients configured for venue: {venue_name}")
 
     # Email content
-    subject = f"{venue_name} - Car Parking Sales Report"
+    subject = f"Evntz | {venue_name} - Car Parking Sales Report"
     body = (
         "Hi,\n\n"
         f"Please see latest sales report for {venue_name} attached.\n\n"
@@ -69,7 +70,7 @@ def send_report_email(venue_name, pdf_filename, recipients=None, cc_recipients=N
     encoders.encode_base64(part)
 
     # Add header as key/value pair to attachment part
-    part.add_header("Content-Disposition", f"attachment; filename= {pdf_filename}")
+    part.add_header("Content-Disposition", f"attachment; filename= {Path(pdf_filename).name}")
 
     # Add attachment to message
     message.attach(part)

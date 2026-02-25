@@ -35,8 +35,8 @@ def generate_html_report(venue, events):
     <head>
         <meta charset="UTF-8">
         <title>{REPORT_CONFIG['title']}</title>
-        <link rel="stylesheet" href="{STYLES['css_link']}">
-        <link rel="stylesheet" href="{STYLES['custom_css']}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
+        <link rel="stylesheet" href="styles/evntz_reports.css">
     </head>
     <header style="display:flex;">
         <div style="flex-basis: 65%">
@@ -45,7 +45,7 @@ def generate_html_report(venue, events):
             Time: {datetime.now().strftime(REPORT_CONFIG['time_format'])}
         </div>
         <div style="flex-basis: 35%; border-left: 1px solid var(--border); padding-left: 10px;">
-            <h2 style="margin-top: 0px; margin-bottom: 8px;">Car Parking<br/>{REPORT_CONFIG['title']}</h2>
+            <h2 style="margin-top: 0px; margin-bottom: 8px;">Car Parking<br/>Sales Report</h2>
             <img style="height: 44px; width: 160px;" src="{REPORT_CONFIG['logo_url']}">
         </div>
     </header>

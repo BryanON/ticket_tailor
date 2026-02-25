@@ -233,7 +233,7 @@ def main():
 
     event_series_list = get_event_series(args.past_events)
     occurrences_dict = {}
-    venues_dict = {}
+    #venues_dict = {}
     tickets_list = []
 
     if not args.all:

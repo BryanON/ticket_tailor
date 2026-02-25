@@ -1,4 +1,5 @@
 """Report generation utilities including graphs and data aggregation."""
+import textwrap
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
@@ -48,12 +49,13 @@ def generate_chart(venue_name, events, base_dir=None):
 
     plt.xlabel('Event')
     plt.ylabel('Tickets')
+    wrapped_names = [textwrap.fill(name, width=25) for name in event_names]
     plt.xticks(
         [r + (bar_width / 2) for r in range(len(issued_tickets))],
-        event_names,
+        wrapped_names,
         rotation=35,
         ha='right',
-        rotation_mode='anchor'
+        rotation_mode='anchor',
     )
     plt.tight_layout()
     plt.legend()
