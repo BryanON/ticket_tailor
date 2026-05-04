@@ -2,9 +2,18 @@
 import os
 
 # Email Configuration
+# EMAIL_CONFIG = {
+#     "sender_email": os.getenv("SENDER_EMAIL", "bryanoneill10@gmail.com"),
+#     "sender_password": os.getenv("SENDER_PASSWORD", "mtoe eadz suol rwrj"),"zjni yfvm lcyt assk"
+#     "receiver_email": os.getenv("RECEIVER_EMAIL", "bryanoneill10@gmail.com"),
+#     "cc": os.getenv("CC_EMAIL", "bryanoneill10@gmail.com"),
+#     "smtp_server": "smtp.gmail.com",
+#     "smtp_port": 465,
+# }
+
 EMAIL_CONFIG = {
-    "sender_email": os.getenv("SENDER_EMAIL", "bryanoneill10@gmail.com"),
-    "sender_password": os.getenv("SENDER_PASSWORD", "mtoe eadz suol rwrj"),
+    "sender_email": os.getenv("SENDER_EMAIL", "evntzreports@evntz.app"),
+    "sender_password": os.getenv("SENDER_PASSWORD", "zjni yfvm lcyt assk"),
     "receiver_email": os.getenv("RECEIVER_EMAIL", "bryanoneill10@gmail.com"),
     "cc": os.getenv("CC_EMAIL", "bryanoneill10@gmail.com"),
     "smtp_server": "smtp.gmail.com",

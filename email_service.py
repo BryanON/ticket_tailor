@@ -44,10 +44,9 @@ def send_report_email(venue_name, pdf_filename, recipients=None, cc_recipients=N
     # Email content
     subject = f"Evntz | {venue_name} - Car Parking Sales Report"
     body = (
-        "Hi,\n\n"
-        f"Please see latest sales report for {venue_name} attached.\n\n"
-        "Many thanks,\n"
-        "Evntz Team"
+        "<p>Hi,</p>"
+        f"<p>Please see latest sales report for {venue_name} attached.</p>"
+        "<p>Many thanks,<br>Evntz Team</p>"
     )
 
     # Create a multipart message and set headers
@@ -59,7 +58,7 @@ def send_report_email(venue_name, pdf_filename, recipients=None, cc_recipients=N
         message["Cc"] = ", ".join(cc_emails)
 
     # Add body to email
-    message.attach(MIMEText(body, "plain"))
+    message.attach(MIMEText(body, "html"))
 
     # Open the file in binary mode and attach
     with open(pdf_filename, "rb") as attachment:
