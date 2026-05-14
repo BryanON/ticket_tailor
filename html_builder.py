@@ -49,11 +49,13 @@ def build_detailed_table(slots, event_name, summary):
     """
 
 
-def build_summary_table_rows(events):
+def build_summary_table_rows(events, show_totals=False):
     """Build all summary table rows from events."""
     summary_rows = []
+    issued_total = 0
     for event in events:
         event_summary = events[event]['summary']
+        issued_total += event_summary['total_issued_tickets']
         event_name = event.replace(VENUE_PREFIX, '')
         summary_rows.append(
             build_summary_row(
@@ -62,6 +64,18 @@ def build_summary_table_rows(events):
                 event_summary['total_issued_tickets'],
                 event_summary['remaining_tickets']
             )
+        )
+
+    if show_totals:
+        summary_rows.append(
+            f"""
+            <tr style="border-top: 1px solid var(--border);">
+                <td style="text-align: center;"><strong>Grand Total</strong></td>
+                <td></td>
+                <td><strong>{issued_total}</strong></td>
+                <td></td>
+            </tr>
+            """
         )
     return "\n".join(summary_rows)
 

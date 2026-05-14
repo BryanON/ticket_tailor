@@ -81,7 +81,7 @@ def send_report_email(venue_name, pdf_filename, recipients=None, cc_recipients=N
             # Send to all recipients (to + cc)
             all_recipients = to_emails + cc_emails
             server.sendmail(sender_email, all_recipients, message.as_string())
-            print(f"Email sent successfully for {venue_name} to {', '.join(to_emails)}")
+            print(f"Email sent successfully for {venue_name} to {', '.join(to_emails)}, cced to {', '.join(cc_emails)}")
     except smtplib.SMTPAuthenticationError:
         print(f"Error: Failed to authenticate with email service for {venue_name}")
         raise

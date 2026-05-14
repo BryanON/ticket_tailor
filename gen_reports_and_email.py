@@ -1,5 +1,6 @@
 """Main module for generating and emailing ticket sales reports."""
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from weasyprint import HTML
 import ticket_tailor
@@ -16,7 +17,7 @@ REPORTS_DIR = SCRIPT_DIR / "reports"
 REPORTS_DIR.mkdir(exist_ok=True)
 
 
-def generate_html_report(venue, events):
+def generate_html_report(venue, events, show_totals=False):
     """
     Generate the HTML report for a venue and its events.
     
@@ -41,8 +42,8 @@ def generate_html_report(venue, events):
     <header style="display:flex;">
         <div style="flex-basis: 65%">
             <h1 style="margin-top: 0px;">{venue}</h1>
-            Date: {datetime.now().strftime(REPORT_CONFIG['date_format'])}<br/>
-            Time: {datetime.now().strftime(REPORT_CONFIG['time_format'])}
+            Date: {datetime.now(ZoneInfo("Europe/Dublin")).strftime(REPORT_CONFIG['date_format'])}<br/>
+            Time: {datetime.now(ZoneInfo("Europe/Dublin")).strftime(REPORT_CONFIG['time_format'])}
         </div>
         <div style="flex-basis: 35%; border-left: 1px solid var(--border); padding-left: 10px;">
             <h2 style="margin-top: 0px; margin-bottom: 8px;">Car Parking<br/>Sales Report</h2>
@@ -60,7 +61,7 @@ def generate_html_report(venue, events):
                 <th>Tickets Remaining</th>
             </thead>
             <tbody>
-                {build_summary_table_rows(events)}
+                {build_summary_table_rows(events, show_totals=show_totals)}
             </tbody>
         </table>
 
@@ -86,6 +87,7 @@ def generate_html_report(venue, events):
 def main():
     """Main function to generate reports and send emails for all venues."""
     try:
+        print(f"Running at {datetime.now(ZoneInfo('Europe/Dublin')).strftime('%Y-%m-%d %H:%M:%S')} IST")
         # Whitelist is mandatory
         if not VENUES_WHITELIST:
             print("Error: VENUES_WHITELIST is not configured. Please set venues in config.py")
@@ -100,12 +102,20 @@ def main():
             return
         
         for venue in venues_to_process:
+
+            # Get email configuration for this venue
+            venue_email_config = VENUE_EMAIL_CONFIG.get(venue)
+
+            recipients = venue_email_config.get("recipients", [])
+            cc_recipients = venue_email_config.get("cc", [])
+            show_totals = venue_email_config.get("show_totals", True)
+
             # Generate filename with venue name and current date
             date_str = datetime.now().strftime("%Y%m%d")
             filename = f"{venue.replace(' ', '_')}_sales_{date_str}"
             
             # Generate HTML report
-            html_report = generate_html_report(venue, venues_to_process[venue])
+            html_report = generate_html_report(venue, venues_to_process[venue], show_totals=show_totals)
             html_path = REPORTS_DIR / f"{filename}.html"
             with open(html_path, 'w') as html_file:
                 html_file.write(html_report)
@@ -119,14 +129,9 @@ def main():
                 optimize_images=True
             )
             
-            # Get email configuration for this venue
-            venue_email_config = VENUE_EMAIL_CONFIG.get(venue)
             if not venue_email_config:
                 print(f"Warning: No email configuration found for {venue}. Skipping email.")
                 continue
-            
-            recipients = venue_email_config.get("recipients", [])
-            cc_recipients = venue_email_config.get("cc", [])
             
             if not recipients:
                 print(f"Warning: No recipients configured for {venue}. Skipping email.")
