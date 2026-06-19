@@ -1,4 +1,5 @@
 """Main module for generating and emailing ticket sales reports."""
+import argparse
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -46,7 +47,7 @@ def generate_html_report(venue, events, show_totals=False):
             Time: {datetime.now(ZoneInfo("Europe/Dublin")).strftime(REPORT_CONFIG['time_format'])}
         </div>
         <div style="flex-basis: 35%; border-left: 1px solid var(--border); padding-left: 10px;">
-            <h2 style="margin-top: 0px; margin-bottom: 8px;">Car Parking<br/>Sales Report</h2>
+            <h2 style="margin-top: 0px; margin-bottom: 8px;">Car Parking<br/>Ticket Report</h2>
             <img style="height: 44px; width: 160px;" src="{REPORT_CONFIG['logo_url']}">
         </div>
     </header>
@@ -86,19 +87,27 @@ def generate_html_report(venue, events, show_totals=False):
 
 def main():
     """Main function to generate reports and send emails for all venues."""
+    parser = argparse.ArgumentParser(description="Generate and email ticket sales reports.")
+    parser.add_argument(
+        "--venue", action="append", dest="venues", metavar="VENUE",
+        help="Venue name to process (can be repeated). Overrides VENUES_WHITELIST when provided.",
+    )
+    args = parser.parse_args()
+
+    whitelist = args.venues if args.venues else VENUES_WHITELIST
+
     try:
         print(f"Running at {datetime.now(ZoneInfo('Europe/Dublin')).strftime('%Y-%m-%d %H:%M:%S')} IST")
-        # Whitelist is mandatory
-        if not VENUES_WHITELIST:
-            print("Error: VENUES_WHITELIST is not configured. Please set venues in config.py")
+        if not whitelist:
+            print("Error: No venues specified. Pass --venue or configure VENUES_WHITELIST in config.py")
             return
-        
+
         venues = ticket_tailor.get_all_upcoming_venues_dict()
-        
+
         # Filter venues based on whitelist
-        venues_to_process = {v: venues[v] for v in VENUES_WHITELIST if v in venues}
+        venues_to_process = {v: venues[v] for v in whitelist if v in venues}
         if not venues_to_process:
-            print(f"Error: None of the whitelisted venues found: {VENUES_WHITELIST}")
+            print(f"Error: None of the specified venues found: {whitelist}")
             return
         
         for venue in venues_to_process:
@@ -112,7 +121,7 @@ def main():
 
             # Generate filename with venue name and current date
             date_str = datetime.now().strftime("%Y%m%d")
-            filename = f"{venue.replace(' ', '_')}_sales_{date_str}"
+            filename = f"{venue.replace(' ', '_')}_car_park_ticket_report_{date_str}"
             
             # Generate HTML report
             html_report = generate_html_report(venue, venues_to_process[venue], show_totals=show_totals)

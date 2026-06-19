@@ -61,31 +61,46 @@ VENUES_WHITELIST = [
 # Venue email configuration
 # Maps venue names to their recipients and CC recipients
 KIM = "kim@evntz.app"
+NH = "natalie@evntz.app"
 KILLIAN = "killian@eventproduction.ie"
 YASMIN = "YMcEvoy@festivalrepublic.com"
 MARK = "mark.butler@festivalrepublic.com"
 ADRIAN = "Adrian.Flaherty@tus.ie"
 BON = "bryanoneill10@gmail.com"
 
+# VENUE_EMAIL_CONFIG = {
+#     "Malahide Castle": {
+#         "recipients": [BON],
+#     },
+#     "Marlay Park": {
+#         "recipients": [BON],
+#     },
+#     "Slane Castle": {
+#         "recipients": [BON],
+#     },
+#     "Thomond Park": {
+#         "recipients": [BON],
+#     },
+# }
 
 VENUE_EMAIL_CONFIG = {
     "Malahide Castle": {
         "recipients": [YASMIN],
-        "cc": [KIM, KILLIAN],
+        "cc": [KIM, NH, KILLIAN],
         # "show_totals": False,  # Optional: Override default to hide totals for this venue
     },
     "Marlay Park": {
         "recipients": [MARK],
-        "cc": [KIM, KILLIAN],
+        "cc": [KIM, NH, KILLIAN],
     },
     "Slane Castle": {
-        "recipients": [KIM],
+        "recipients": [KIM, NH],
         "cc": [KILLIAN, BON],
         "show_totals": True,
     },
     "Thomond Park": {
         "recipients": [ADRIAN],
-        "cc": [KIM, KILLIAN],
+        "cc": [KIM, NH, KILLIAN],
     },
     # Add more venues and their recipients as needed
     # "Another Venue": {

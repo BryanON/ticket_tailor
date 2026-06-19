@@ -42,10 +42,10 @@ def send_report_email(venue_name, pdf_filename, recipients=None, cc_recipients=N
         raise ValueError(f"No valid recipients configured for venue: {venue_name}")
 
     # Email content
-    subject = f"Evntz | {venue_name} - Car Parking Sales Report"
+    subject = f"Evntz | {venue_name} - Car Parking Ticket Report"
     body = (
         "<p>Hi,</p>"
-        f"<p>Please see latest sales report for {venue_name} attached.</p>"
+        f"<p>Please see latest car parking ticket report for {venue_name} attached.</p>"
         "<p>Many thanks,<br>Evntz Team</p>"
     )
 
